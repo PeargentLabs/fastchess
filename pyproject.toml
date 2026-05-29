@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fastchess"
-version = "0.1.0"
+version = "0.1.1"
 description = "High-performance Python chess library in C: legal move generation, SAN/UCI parsing, and NumPy tensor export"
 readme = "README.md"
 license = "MIT"
