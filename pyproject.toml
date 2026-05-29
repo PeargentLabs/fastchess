@@ -7,8 +7,7 @@ name = "fastchess"
 version = "0.1.1"
 description = "High-performance Python chess library in C: legal move generation, SAN/UCI parsing, and NumPy tensor export"
 readme = "README.md"
-license = "MIT"
-license-files = ["LICENSE"]
+license = {text = "MIT"}
 authors = [
     { name = "PeargentLabs", email = "tarun.peargentlabs@gmail.com" },
 ]
