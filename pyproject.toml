@@ -11,7 +11,7 @@ license = {text = "MIT"}
 authors = [
     { name = "PeargentLabs", email = "tarun.peargentlabs@gmail.com" },
 ]
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 dependencies = ["numpy"]
 classifiers = [
     "Programming Language :: Python :: 3",
