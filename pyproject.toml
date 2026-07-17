@@ -24,6 +24,6 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Peargent-Labs/fastchess"
+Homepage = "https://peargentlabs.github.io/fastchess/"
 Repository = "https://github.com/Peargent-Labs/fastchess"
 "Bug Tracker" = "https://github.com/Peargent-Labs/fastchess/issues"
