@@ -1,0 +1,22 @@
+{
+  "name": "fastchess",
+  "short_name": "fastchess",
+  "description": "High-performance Python chess library written in C by PeargentLabs",
+  "icons": [
+    {
+      "src": "web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#5C8A2E",
+  "background_color": "#FAFAF6",
+  "display": "standalone"
+}
