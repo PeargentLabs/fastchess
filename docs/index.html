@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO: Primary Meta Tags -->
-  <title>fastchess — Fast Python Chess Library by PeargentLabs | C Extension for ML &amp; UCI</title>
+  <title>fastchess - Fast Python Chess Library by PeargentLabs | C Extension for ML &amp; UCI</title>
   <meta name="description" content="fastchess is a high-performance Python chess library written in C. Fast legal move generation, SAN/UCI parsing, FEN support, and NumPy tensor export for machine learning. Built by PeargentLabs." />
   <meta name="keywords" content="fastchess, fastchess python, python chess library, fast chess, chess C extension, UCI parser, SAN parser, chess numpy tensor, machine learning chess, peargentlabs, peargent, otter chess, python-chess alternative, chess move generation, chess ML, fastchess peargent" />
   <meta name="author" content="PeargentLabs" />
@@ -23,7 +23,7 @@
   <!-- SEO: Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://peargentlabs.github.io/fastchess/" />
-  <meta property="og:title" content="fastchess — Fast Python Chess Library by PeargentLabs" />
+  <meta property="og:title" content="fastchess - Fast Python Chess Library by PeargentLabs" />
   <meta property="og:description" content="High-performance Python chess library written in C. Fast legal move generation, SAN/UCI parsing, and NumPy tensor export for ML pipelines." />
   <meta property="og:image" content="https://peargentlabs.github.io/fastchess/og-image.png" />
   <meta property="og:site_name" content="fastchess" />
@@ -32,7 +32,7 @@
   <!-- SEO: Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content="https://peargentlabs.github.io/fastchess/" />
-  <meta name="twitter:title" content="fastchess — Fast Python Chess Library by PeargentLabs" />
+  <meta name="twitter:title" content="fastchess - Fast Python Chess Library by PeargentLabs" />
   <meta name="twitter:description" content="High-performance Python chess library written in C. Fast legal move generation, SAN/UCI parsing, and NumPy tensor export for ML pipelines." />
   <meta name="twitter:image" content="https://peargentlabs.github.io/fastchess/og-image.png" />
 
@@ -60,7 +60,7 @@
         "applicationCategory": "DeveloperApplication",
         "operatingSystem": "Windows, macOS, Linux",
         "programmingLanguage": ["Python", "C"],
-        "description": "High-performance Python chess library written in C — fast legal move generation, SAN/UCI parsing, FEN support, and NumPy tensor export for machine learning pipelines.",
+        "description": "High-performance Python chess library written in C - fast legal move generation, SAN/UCI parsing, FEN support, and NumPy tensor export for machine learning pipelines.",
         "url": "https://peargentlabs.github.io/fastchess/",
         "downloadUrl": "https://pypi.org/project/fastchess/",
         "softwareVersion": "0.1.2",
@@ -237,7 +237,7 @@
     }
     .install-box .prompt { color: var(--pear-dim); user-select: none; }
 
-    /* Hero mini chessboard — same square colours as the app's board theme */
+    /* Hero mini chessboard - same square colours as the app's board theme */
     .board-figure { text-align: center; }
     .mini-board {
       display: grid;
@@ -570,7 +570,7 @@
       <h1>Chess that moves at <em>C speed</em></h1>
       <p class="hero-sub">
         <strong>fastchess</strong> is a high-performance Python chess library written in C.
-        Fast legal move generation, SAN/UCI parsing, and NumPy tensor export —
+        Fast legal move generation, SAN/UCI parsing, and NumPy tensor export -
         built for data pipelines and ML workflows. A fast alternative to python-chess by <strong>PeargentLabs</strong>.
       </p>
       <div class="install-box" aria-label="Install fastchess via pip">
@@ -599,7 +599,7 @@
     <div class="card-grid">
       <div class="card">
         <div class="card-title">C-backed core</div>
-        <div class="card-desc">Move generation and board logic run as native C — no Python overhead in the hot path.</div>
+        <div class="card-desc">Move generation and board logic run as native C - no Python overhead in the hot path.</div>
       </div>
       <div class="card">
         <div class="card-title">ML-ready tensors</div>
@@ -622,7 +622,7 @@
     <table class="compare-table">
       <tr><th>Feature</th><th>fastchess</th><th>python-chess</th></tr>
       <tr><td>Core language</td><td>C extension</td><td>Pure Python</td></tr>
-      <tr><td>Move generation</td><td>Native C — zero Python overhead</td><td>Python loops</td></tr>
+      <tr><td>Move generation</td><td>Native C - zero Python overhead</td><td>Python loops</td></tr>
       <tr><td>ML tensor export</td><td>Built-in <code>to_tensor()</code></td><td>Manual encoding required</td></tr>
       <tr><td>UCI/SAN parsing</td><td>C-level parsing</td><td>Python string operations</td></tr>
       <tr><td>Target use case</td><td>Data pipelines, ML training</td><td>General purpose</td></tr>
@@ -691,7 +691,7 @@ board.<span class="fn">push_uci</span>(<span class="str">"e7e5"</span>)
 <span class="nb">print</span>(board.ep_square)    <span class="cm"># square index, or -1 if none</span>
 <span class="nb">print</span>(board.<span class="fn">has_legal_en_passant</span>())  <span class="cm"># True/False</span>
 
-<span class="cm"># Castling rights — pass fastchess.WHITE (0) or fastchess.BLACK (1)</span>
+<span class="cm"># Castling rights - pass fastchess.WHITE (0) or fastchess.BLACK (1)</span>
 <span class="nb">print</span>(board.castling)                                            <span class="cm"># bitmask (15 = all four)</span>
 <span class="nb">print</span>(board.<span class="fn">has_kingside_castling_rights</span>(fastchess.WHITE))   <span class="cm"># True</span>
 <span class="nb">print</span>(board.<span class="fn">has_queenside_castling_rights</span>(fastchess.WHITE))  <span class="cm"># True</span>
@@ -703,7 +703,7 @@ piece = board.<span class="fn">piece_at</span>(<span class="nb">4</span>)   <spa
 <span class="cm"># Returns None if the square is empty</span></code></pre>
 
     <h3>Copy &amp; mirror</h3>
-<pre><code><span class="cm"># Independent copy — mutations don't affect the original</span>
+<pre><code><span class="cm"># Independent copy - mutations don't affect the original</span>
 clone = board.<span class="fn">copy</span>()
 clone.<span class="fn">push_uci</span>(<span class="str">"d2d4"</span>)
 
@@ -740,8 +740,8 @@ x = torch.<span class="fn">from_numpy</span>(tensor).<span class="fn">unsqueeze<
     <p>The 18 planes encode piece positions and board metadata:</p>
     <table>
       <tr><th>Planes</th><th>Content</th></tr>
-      <tr><td><code>0–5</code></td><td>White's pieces (P, N, B, R, Q, K) — pre-mirrored to side-to-move when <code>canonical=True</code></td></tr>
-      <tr><td><code>6–11</code></td><td>Black's pieces (P, N, B, R, Q, K) — pre-mirrored to opponent when <code>canonical=True</code></td></tr>
+      <tr><td><code>0–5</code></td><td>White's pieces (P, N, B, R, Q, K) - pre-mirrored to side-to-move when <code>canonical=True</code></td></tr>
+      <tr><td><code>6–11</code></td><td>Black's pieces (P, N, B, R, Q, K) - pre-mirrored to opponent when <code>canonical=True</code></td></tr>
       <tr><td><code>12–15</code></td><td>Castling rights (WK, WQ, BK, BQ)</td></tr>
       <tr><td><code>16</code></td><td>En passant target square</td></tr>
       <tr><td><code>17</code></td><td>Side to move (all 1s = White, all 0s = Black)</td></tr>
@@ -765,7 +765,7 @@ x = torch.<span class="fn">from_numpy</span>(tensor).<span class="fn">unsqueeze<
       <tr><th>Method</th><th>Returns</th><th>Description</th></tr>
       <tr><td><code>fen()</code></td><td><code>str</code></td><td>Current position as a FEN string</td></tr>
       <tr><td><code>legal_moves_uci()</code></td><td><code>list[str]</code></td><td>All legal moves in UCI format</td></tr>
-      <tr><td><code>push_uci(uci)</code></td><td>—</td><td>Apply a move given as a UCI string (e.g. <code>"e2e4"</code>)</td></tr>
+      <tr><td><code>push_uci(uci)</code></td><td>-</td><td>Apply a move given as a UCI string (e.g. <code>"e2e4"</code>)</td></tr>
       <tr><td><code>push_san(san)</code></td><td><code>str</code></td><td>Apply a move given in SAN; returns the UCI string</td></tr>
       <tr><td><code>is_check()</code></td><td><code>bool</code></td><td>True if the side to move is in check</td></tr>
       <tr><td><code>has_legal_en_passant()</code></td><td><code>bool</code></td><td>True if a legal en passant capture is available</td></tr>
@@ -805,7 +805,7 @@ x = torch.<span class="fn">from_numpy</span>(tensor).<span class="fn">unsqueeze<
   <section id="ecosystem">
     <h2>PeargentLabs Ecosystem</h2>
     <p>
-      fastchess is part of the <strong>PeargentLabs</strong> chess tooling ecosystem —
+      fastchess is part of the <strong>PeargentLabs</strong> chess tooling ecosystem -
       a collection of high-performance, open-source tools for chess programming,
       engine development, and machine learning research.
     </p>
@@ -825,7 +825,7 @@ x = torch.<span class="fn">from_numpy</span>(tensor).<span class="fn">unsqueeze<
   </main>
 
   <footer>
-    <span>fastchess — MIT License · Built by <a href="https://github.com/PeargentLabs" target="_blank" rel="noopener">PeargentLabs</a></span>
+    <span>fastchess - MIT License · Built by <a href="https://github.com/PeargentLabs" target="_blank" rel="noopener">PeargentLabs</a></span>
     <span><a href="https://pypi.org/project/fastchess/" target="_blank" rel="noopener">PyPI</a> · <a href="https://github.com/PeargentLabs/fastchess" target="_blank" rel="noopener">GitHub</a></span>
   </footer>
 

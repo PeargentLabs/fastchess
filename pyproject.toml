@@ -1,11 +1,11 @@
-[build-system]
+﻿[build-system]
 requires = ["setuptools>=61", "numpy"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "fastchess"
 version = "0.1.2"
-description = "High-performance Python chess library written in C — fast legal move generation, SAN/UCI parsing, FEN support, and NumPy tensor export for ML pipelines. By PeargentLabs."
+description = "High-performance Python chess library written in C - fast legal move generation, SAN/UCI parsing, FEN support, and NumPy tensor export for ML pipelines. By PeargentLabs."
 readme = "README.md"
 license = {text = "MIT"}
 authors = [

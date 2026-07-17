@@ -1,4 +1,4 @@
-# fastchess
+﻿# fastchess
 
 [![PyPI version](https://img.shields.io/pypi/v/fastchess)](https://pypi.org/project/fastchess/)
 [![Python 3.9+](https://img.shields.io/pypi/pyversions/fastchess)](https://pypi.org/project/fastchess/)
@@ -13,7 +13,7 @@ A **high-performance Python chess library** written in C with Python bindings, b
 | | fastchess | python-chess |
 |---|---|---|
 | **Core language** | C extension | Pure Python |
-| **Move generation** | Native C — no Python overhead | Python loops |
+| **Move generation** | Native C - no Python overhead | Python loops |
 | **ML tensor export** | Built-in `to_tensor()` → `(18, 8, 8)` NumPy array | Requires manual encoding |
 | **UCI/SAN parsing** | C-level parsing | Python string ops |
 | **Target use case** | Data pipelines, ML training, batch processing | General purpose |
@@ -57,7 +57,7 @@ mirrored = board.mirror()
 
 ## ML / Tensor Export
 
-Export any chess position as an `(18, 8, 8)` NumPy float32 array — ready for PyTorch or TensorFlow:
+Export any chess position as an `(18, 8, 8)` NumPy float32 array - ready for PyTorch or TensorFlow:
 
 ```python
 import fastchess
@@ -99,12 +99,12 @@ The 18 planes encode: piece positions (6 per side), castling rights (4), en pass
 
 fastchess is part of the **PeargentLabs** chess tooling ecosystem:
 
-- **[fastchess](https://github.com/PeargentLabs/fastchess)** — High-performance Python chess library (C extension)
-- **[OtterChess](https://github.com/PeargentLabs/OtterChess)** — Chess engine and analysis platform
+- **[fastchess](https://github.com/PeargentLabs/fastchess)** - High-performance Python chess library (C extension)
+- **[OtterChess](https://github.com/PeargentLabs/OtterChess)** - Chess engine and analysis platform
 
 ## License
 
-MIT — see [LICENSE](LICENSE) for details.
+MIT - see [LICENSE](LICENSE) for details.
 
 ---
 

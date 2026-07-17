@@ -1,5 +1,5 @@
-/*
- * fastchess.c — Fast C chess library with Python bindings.
+﻿/*
+ * fastchess.c - Fast C chess library with Python bindings.
  *
  * Implements mailbox-based board representation, legal move generation,
  * SAN parsing, board mirroring, and board-to-tensor conversion.
@@ -226,7 +226,7 @@ static void fc_mirror_board(const FC_Board *src, FC_Board *dst) {
     if (src->castling & CASTLE_BK) dst->castling |= CASTLE_WK;
     if (src->castling & CASTLE_BQ) dst->castling |= CASTLE_WQ;
 
-    /* Mirror EP square — only keep if a capturing pawn exists in the
+    /* Mirror EP square - only keep if a capturing pawn exists in the
      * mirrored position (matches python-chess behavior). */
     dst->ep_square = -1;
     if (src->ep_square >= 0) {
