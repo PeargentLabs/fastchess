@@ -448,10 +448,94 @@
     }
 
     @media (max-width: 720px) {
-      .hero { grid-template-columns: 1fr; gap: 36px; }
-      .board-figure { text-align: left; }
-      h1 { font-size: 2rem; }
-      .nav-links { gap: 16px; }
+      .page { padding: 0 18px 48px; }
+
+      /* Nav: compact row, hide less important links */
+      nav {
+        padding: 14px 0;
+        margin-bottom: 32px;
+        gap: 8px;
+      }
+      .nav-links {
+        gap: 14px;
+        font-size: 0.82rem;
+      }
+      .nav-links a.nav-hide-mobile { display: none; }
+
+      /* Hero: clean single column, hide board */
+      .hero {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 48px;
+      }
+      .board-figure { display: none; }
+      .badge { font-size: 0.65rem; margin-bottom: 14px; }
+      h1 { font-size: 2rem; margin-bottom: 12px; }
+      .hero-sub { font-size: 0.92rem; margin-bottom: 24px; }
+      .install-box {
+        font-size: 0.82rem;
+        padding: 10px 16px;
+        width: 100%;
+        justify-content: center;
+      }
+
+      /* Sections */
+      section { margin-bottom: 44px; }
+      h2 { font-size: 1.2rem; gap: 8px; }
+      h2::before { width: 8px; height: 8px; }
+      h3 { margin: 24px 0 10px; }
+
+      /* Cards: single column, tighter */
+      .card-grid { grid-template-columns: 1fr; gap: 10px; }
+      .card { padding: 14px 16px; }
+      .card-title { font-size: 0.9rem; }
+      .card-desc { font-size: 0.82rem; }
+
+      /* Tables: scroll wrapper */
+      table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      th { padding: 8px 12px; font-size: 0.68rem; }
+      td { padding: 9px 12px; font-size: 0.82rem; }
+
+      /* Code blocks */
+      pre {
+        font-size: 0.78rem;
+        padding: 14px 16px;
+        line-height: 1.7;
+        border-left-width: 2px;
+      }
+
+      /* Inline code */
+      p code, li code, td code { font-size: 0.8em; }
+
+      /* Ecosystem: single column */
+      .eco-grid { grid-template-columns: 1fr; }
+      .eco-card { padding: 14px 16px; }
+
+      /* Pills */
+      .pills { gap: 6px; }
+      .pill { font-size: 0.72rem; padding: 2px 8px; }
+
+      /* Footer */
+      footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        font-size: 0.8rem;
+        margin-top: 48px;
+      }
+    }
+
+    /* Even smaller screens */
+    @media (max-width: 420px) {
+      h1 { font-size: 1.65rem; }
+      .hero-sub { font-size: 0.85rem; }
+      .nav-links { gap: 10px; font-size: 0.78rem; }
+      pre { font-size: 0.72rem; padding: 12px 12px; }
     }
   </style>
 </head>
@@ -467,9 +551,9 @@
       <div class="nav-links">
         <a href="#quickstart">Quick Start</a>
         <a href="#api">API</a>
-        <a href="#ml">ML / Tensors</a>
-        <a href="#comparison">vs python-chess</a>
-        <a href="#ecosystem">Ecosystem</a>
+        <a href="#ml" class="nav-hide-mobile">ML / Tensors</a>
+        <a href="#comparison" class="nav-hide-mobile">vs python-chess</a>
+        <a href="#ecosystem" class="nav-hide-mobile">Ecosystem</a>
         <a href="https://pypi.org/project/fastchess/" target="_blank" rel="noopener">PyPI</a>
         <a href="https://github.com/PeargentLabs/fastchess" target="_blank" rel="noopener">GitHub</a>
       </div>
