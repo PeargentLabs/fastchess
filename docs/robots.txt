@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://peargentlabs.github.io/fastchess/sitemap.xml

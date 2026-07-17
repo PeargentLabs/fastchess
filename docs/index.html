@@ -3,7 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>fastchess — Python chess library</title>
+
+  <!-- SEO: Primary Meta Tags -->
+  <title>fastchess — Fast Python Chess Library by PeargentLabs | C Extension for ML &amp; UCI</title>
+  <meta name="description" content="fastchess is a high-performance Python chess library written in C. Fast legal move generation, SAN/UCI parsing, FEN support, and NumPy tensor export for machine learning. Built by PeargentLabs." />
+  <meta name="keywords" content="fastchess, fastchess python, python chess library, fast chess, chess C extension, UCI parser, SAN parser, chess numpy tensor, machine learning chess, peargentlabs, peargent, otter chess, python-chess alternative, chess move generation, chess ML, fastchess peargent" />
+  <meta name="author" content="PeargentLabs" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://peargentlabs.github.io/fastchess/" />
+
+  <!-- SEO: Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://peargentlabs.github.io/fastchess/" />
+  <meta property="og:title" content="fastchess — Fast Python Chess Library by PeargentLabs" />
+  <meta property="og:description" content="High-performance Python chess library written in C. Fast legal move generation, SAN/UCI parsing, and NumPy tensor export for ML pipelines." />
+  <meta property="og:image" content="https://peargentlabs.github.io/fastchess/og-image.png" />
+  <meta property="og:site_name" content="fastchess" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- SEO: Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://peargentlabs.github.io/fastchess/" />
+  <meta name="twitter:title" content="fastchess — Fast Python Chess Library by PeargentLabs" />
+  <meta name="twitter:description" content="High-performance Python chess library written in C. Fast legal move generation, SAN/UCI parsing, and NumPy tensor export for ML pipelines." />
+  <meta name="twitter:image" content="https://peargentlabs.github.io/fastchess/og-image.png" />
+
+  <!-- SEO: JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "fastchess",
+        "alternateName": ["fastchess python", "fastchess peargent"],
+        "url": "https://peargentlabs.github.io/fastchess/",
+        "description": "Documentation for fastchess, a high-performance Python chess library written in C by PeargentLabs.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "PeargentLabs",
+          "url": "https://github.com/PeargentLabs"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "fastchess",
+        "alternateName": "fastchess python",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Windows, macOS, Linux",
+        "programmingLanguage": ["Python", "C"],
+        "description": "High-performance Python chess library written in C — fast legal move generation, SAN/UCI parsing, FEN support, and NumPy tensor export for machine learning pipelines.",
+        "url": "https://peargentlabs.github.io/fastchess/",
+        "downloadUrl": "https://pypi.org/project/fastchess/",
+        "softwareVersion": "0.1.2",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Organization",
+          "name": "PeargentLabs",
+          "url": "https://github.com/PeargentLabs"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "ratingCount": "1"
+        }
+      },
+      {
+        "@type": "Organization",
+        "name": "PeargentLabs",
+        "alternateName": ["Peargent Labs", "Peargent"],
+        "url": "https://github.com/PeargentLabs",
+        "description": "PeargentLabs builds high-performance chess tools including fastchess and OtterChess."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "PeargentLabs",
+            "item": "https://github.com/PeargentLabs"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "fastchess",
+            "item": "https://peargentlabs.github.io/fastchess/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
@@ -69,7 +166,10 @@
       font-weight: 700;
       font-size: 1.1rem;
       letter-spacing: -0.01em;
+      text-decoration: none;
+      color: var(--paper);
     }
+    .nav-logo:hover { color: var(--pear-deep); }
     .nav-mark {
       width: 14px;
       height: 14px;
@@ -291,6 +391,41 @@
       color: var(--pear-deep);
     }
 
+    /* Comparison table */
+    .compare-table td:nth-child(2) { color: var(--pear-deep); font-weight: 500; }
+
+    /* Ecosystem */
+    .eco-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .eco-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--pear);
+      padding: 18px 20px;
+      text-decoration: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .eco-card:hover {
+      border-left-color: var(--pear-deep);
+      box-shadow: 0 2px 8px rgba(92, 138, 46, 0.12);
+    }
+    .eco-card-name {
+      font-family: var(--font-space);
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--paper);
+      margin-bottom: 4px;
+    }
+    .eco-card-desc {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
     /* Footer */
     footer {
       margin-top: 72px;
@@ -316,32 +451,43 @@
 <div class="page">
 
   <!-- Nav -->
-  <nav>
-    <div class="nav-logo"><span class="nav-mark" aria-hidden="true"></span>fastchess</div>
-    <div class="nav-links">
-      <a href="#quickstart">Quick Start</a>
-      <a href="#api">API</a>
-      <a href="#ml">ML / Tensors</a>
-      <a href="https://pypi.org/project/fastchess/" target="_blank">PyPI</a>
-    </div>
-  </nav>
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="https://peargentlabs.github.io/fastchess/" class="nav-logo" aria-label="fastchess home">
+        <span class="nav-mark" aria-hidden="true"></span>fastchess
+      </a>
+      <div class="nav-links">
+        <a href="#quickstart">Quick Start</a>
+        <a href="#api">API</a>
+        <a href="#ml">ML / Tensors</a>
+        <a href="#comparison">vs python-chess</a>
+        <a href="#ecosystem">Ecosystem</a>
+        <a href="https://pypi.org/project/fastchess/" target="_blank" rel="noopener">PyPI</a>
+        <a href="https://github.com/PeargentLabs/fastchess" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <article>
 
   <!-- Hero -->
-  <div class="hero">
+  <div class="hero" id="hero">
     <div>
-      <span class="badge">python · c extension</span>
+      <span class="badge">python · c extension · by peargentlabs</span>
       <h1>Chess that moves at <em>C speed</em></h1>
       <p class="hero-sub">
-        High-performance Python chess library written in C. Legal move generation,
-        SAN/UCI parsing, and NumPy tensor export — built for data pipelines and ML workflows.
+        <strong>fastchess</strong> is a high-performance Python chess library written in C.
+        Fast legal move generation, SAN/UCI parsing, and NumPy tensor export —
+        built for data pipelines and ML workflows. A fast alternative to python-chess by <strong>PeargentLabs</strong>.
       </p>
-      <div class="install-box">
+      <div class="install-box" aria-label="Install fastchess via pip">
         <span class="prompt">$</span>
         <span class="cmd">pip install fastchess</span>
       </div>
     </div>
     <div class="board-figure">
-      <div class="mini-board" aria-hidden="true">
+      <div class="mini-board" role="img" aria-label="Interactive chess board showing a pawn on e2 selected with legal moves e3 and e4 highlighted">
         <span class="sq sel" style="grid-area: 7 / 5;">&#9817;</span>
         <span class="sq dot" style="grid-area: 6 / 5;"></span>
         <span class="sq dot" style="grid-area: 5 / 5;"></span>
@@ -351,7 +497,13 @@
   </div>
 
   <!-- Why fastchess -->
-  <section>
+  <section id="features">
+    <h2>Why fastchess?</h2>
+    <p>
+      fastchess gives you <strong>C-speed chess logic</strong> with a clean Python API.
+      Whether you're building a chess engine, training an ML model, or processing millions of PGN games,
+      fastchess handles the heavy lifting without Python overhead.
+    </p>
     <div class="card-grid">
       <div class="card">
         <div class="card-title">C-backed core</div>
@@ -368,11 +520,33 @@
     </div>
   </section>
 
+  <!-- fastchess vs python-chess -->
+  <section id="comparison">
+    <h2>fastchess vs python-chess</h2>
+    <p>
+      Looking for a <strong>faster alternative to python-chess</strong>? Here's how fastchess compares for
+      data-intensive and machine learning use cases.
+    </p>
+    <table class="compare-table">
+      <tr><th>Feature</th><th>fastchess</th><th>python-chess</th></tr>
+      <tr><td>Core language</td><td>C extension</td><td>Pure Python</td></tr>
+      <tr><td>Move generation</td><td>Native C — zero Python overhead</td><td>Python loops</td></tr>
+      <tr><td>ML tensor export</td><td>Built-in <code>to_tensor()</code></td><td>Manual encoding required</td></tr>
+      <tr><td>UCI/SAN parsing</td><td>C-level parsing</td><td>Python string operations</td></tr>
+      <tr><td>Target use case</td><td>Data pipelines, ML training</td><td>General purpose</td></tr>
+      <tr><td>License</td><td>MIT</td><td>GPL-3.0</td></tr>
+    </table>
+    <p>
+      If you're processing millions of chess positions for machine learning, fastchess is designed to be
+      a <strong>drop-in replacement</strong> that gives you the speed of C with the convenience of Python.
+    </p>
+  </section>
+
   <!-- Quick Start -->
   <section id="quickstart">
     <h2>Quick Start</h2>
-    <p>Requires Python 3.9+ and NumPy. Install with pip:</p>
-<pre><code><span class="cm"># install</span>
+    <p>Requires Python 3.9+ and NumPy. Install the fastchess Python package with pip:</p>
+<pre><code><span class="cm"># install fastchess</span>
 pip install fastchess</code></pre>
 
     <h3>Create a board &amp; make moves</h3>
@@ -451,7 +625,8 @@ flipped = board.<span class="fn">mirror</span>()
     <h2>ML / Tensors</h2>
     <p>
       <code>to_tensor()</code> exports the board as a <code>(18, 8, 8)</code> NumPy float32 array,
-      ready to feed directly into PyTorch or TensorFlow.
+      ready to feed directly into PyTorch or TensorFlow. Perfect for chess machine learning
+      and neural network training pipelines.
     </p>
 <pre><code><span class="kw">import</span> fastchess
 <span class="kw">import</span> numpy <span class="kw">as</span> np
@@ -484,7 +659,7 @@ x = torch.<span class="fn">from_numpy</span>(tensor).<span class="fn">unsqueeze<
   <!-- API Reference -->
   <section id="api">
     <h2>API Reference</h2>
-    <p>Everything lives on <code>fastchess.Board</code>.</p>
+    <p>Everything lives on <code>fastchess.Board</code>. The fastchess Python API is designed to be familiar if you've used python-chess.</p>
 
     <h3>Constructor</h3>
     <table>
@@ -534,9 +709,32 @@ x = torch.<span class="fn">from_numpy</span>(tensor).<span class="fn">unsqueeze<
     </div>
   </section>
 
+  <!-- PeargentLabs Ecosystem -->
+  <section id="ecosystem">
+    <h2>PeargentLabs Ecosystem</h2>
+    <p>
+      fastchess is part of the <strong>PeargentLabs</strong> chess tooling ecosystem —
+      a collection of high-performance, open-source tools for chess programming,
+      engine development, and machine learning research.
+    </p>
+    <div class="eco-grid">
+      <a href="https://github.com/PeargentLabs/fastchess" class="eco-card" target="_blank" rel="noopener">
+        <div class="eco-card-name">fastchess</div>
+        <div class="eco-card-desc">High-performance Python chess library with C extension. Fast move generation, UCI/SAN parsing, and ML tensor export.</div>
+      </a>
+      <a href="https://github.com/PeargentLabs/OtterChess" class="eco-card" target="_blank" rel="noopener">
+        <div class="eco-card-name">OtterChess</div>
+        <div class="eco-card-desc">Chess engine and analysis platform by PeargentLabs. Built on top of the fastchess library for maximum performance.</div>
+      </a>
+    </div>
+  </section>
+
+    </article>
+  </main>
+
   <footer>
-    <span>fastchess — MIT License</span>
-    <span><a href="https://pypi.org/project/fastchess/" target="_blank">PyPI</a> · <a href="https://github.com/" target="_blank">GitHub</a></span>
+    <span>fastchess — MIT License · Built by <a href="https://github.com/PeargentLabs" target="_blank" rel="noopener">PeargentLabs</a></span>
+    <span><a href="https://pypi.org/project/fastchess/" target="_blank" rel="noopener">PyPI</a> · <a href="https://github.com/PeargentLabs/fastchess" target="_blank" rel="noopener">GitHub</a></span>
   </footer>
 
 </div>

@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "fastchess"
 version = "0.1.2"
-description = "High-performance Python chess library in C: legal move generation, SAN/UCI parsing, and NumPy tensor export"
+description = "High-performance Python chess library written in C — fast legal move generation, SAN/UCI parsing, FEN support, and NumPy tensor export for ML pipelines. By PeargentLabs."
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
@@ -13,6 +13,23 @@ authors = [
 ]
 requires-python = ">=3.9"
 dependencies = ["numpy"]
+keywords = [
+    "chess",
+    "python-chess",
+    "fast-chess",
+    "fastchess",
+    "chess-engine",
+    "UCI",
+    "SAN",
+    "FEN",
+    "numpy",
+    "machine-learning",
+    "chess-tensor",
+    "move-generation",
+    "peargent",
+    "peargentlabs",
+    "otter-chess",
+]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: C",
@@ -25,5 +42,6 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://peargentlabs.github.io/fastchess/"
-Repository = "https://github.com/Peargent-Labs/fastchess"
-"Bug Tracker" = "https://github.com/Peargent-Labs/fastchess/issues"
+Documentation = "https://peargentlabs.github.io/fastchess/"
+Repository = "https://github.com/PeargentLabs/fastchess"
+"Bug Tracker" = "https://github.com/PeargentLabs/fastchess/issues"
